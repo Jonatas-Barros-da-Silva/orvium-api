@@ -1,0 +1,26 @@
+{
+  "name": "@orvium/enterprise-core",
+  "version": "1.0.0",
+  "description": "ORVIUM Enterprise Core - Organizations, Workspaces, Policies, and Audit",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/generate-llms.js || true && vite build",
+    "dev": "vite --host :: --port 3000",
+    "lint": "eslint . --quiet",
+    "preview": "vite preview --host :: --port 3000"
+  },
+  "keywords": [
+    "enterprise",
+    "organization",
+    "workspace",
+    "rbac",
+    "audit"
+  ],
+  "author": "ORVIUM",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

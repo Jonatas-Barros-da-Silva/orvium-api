@@ -1,0 +1,25 @@
+{
+  "name": "@orvium/governance",
+  "version": "1.0.0",
+  "description": "ORVIUM Governance - Rate Limits, Quotas, and Abuse Detection",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/generate-llms.js || true && vite build",
+    "dev": "vite --host :: --port 3000",
+    "lint": "eslint . --quiet",
+    "preview": "vite preview --host :: --port 3000"
+  },
+  "keywords": [
+    "governance",
+    "rate-limit",
+    "quota",
+    "abuse-detection"
+  ],
+  "author": "ORVIUM",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

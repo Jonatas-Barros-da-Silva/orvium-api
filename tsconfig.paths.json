@@ -1,0 +1,12 @@
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@orvium/integration-sdk": ["packages/integration-sdk/src/index.ts"],
+      "@orvium/governance": ["packages/governance/src/index.ts"],
+      "@/*": ["apps/web/src/*"],
+      "@api/*": ["apps/api/src/*"]
+    }
+  }
+}
