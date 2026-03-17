@@ -8,8 +8,8 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build || true
+RUN npm install --workspace=apps/api
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start"]
+CMD ["node","apps/api/src/main.js"]
